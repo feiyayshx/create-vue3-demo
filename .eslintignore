@@ -1,0 +1,10 @@
+/dist/
+
+# !/src/common/js/
+# /src/common/js/*
+# 取消忽略
+# !/src/common/js/screen-scale.js
+
+!.eslintrc.js
+!.postcssrc.js
+!.stylelintrc.js

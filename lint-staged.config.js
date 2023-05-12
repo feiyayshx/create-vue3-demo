@@ -1,5 +1,5 @@
 // lint-staged 配置文件
-export default {
+module.exports = {
   'src/**/*.{js,jsx,vue}': 'eslint --max-warnings=0',
   // '*.{css,scss,vue}': 'stylelint',
   "*.css": "stylelint",
