@@ -21,5 +21,8 @@ module.exports = {
   ],
   parserOptions: {
     ecmaVersion: 'latest'
+  },
+  rules:{
+    indent: [2, 2, { SwitchCase: 1 }], // 强制使用一致的缩进
   }
 }

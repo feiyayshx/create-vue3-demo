@@ -3,15 +3,18 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "vite --mode dev",
+    "staging": "vite build --mode production",
+    "build": "vite build --mode production",
     "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "stylelint": "stylelint \"src/**/*.(vue|scss|css)\" --fix",
     "format": "prettier --write src/",
     "prepare": "husky install",
     "lint-staged": "lint-staged -c lint-staged.config.js"
   },
   "dependencies": {
+    "element-plus": "^2.3.4",
     "pinia": "^2.0.35",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
@@ -25,12 +28,18 @@
     "eslint-plugin-vue": "^9.11.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",
+    "postcss": "^8.4.23",
+    "postcss-html": "^1.5.0",
+    "postcss-scss": "^4.0.6",
     "prettier": "^2.8.8",
+    "sass": "^1.62.1",
     "stylelint": "^15.6.1",
     "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-standard-scss": "^9.0.0",
     "stylelint-config-standard-vue": "^1.0.0",
     "stylelint-order": "^6.0.3",
+    "unplugin-auto-import": "^0.15.3",
+    "unplugin-vue-components": "^0.24.1",
     "vite": "^4.3.4"
   }
 }
