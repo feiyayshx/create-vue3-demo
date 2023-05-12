@@ -7,7 +7,9 @@
       <el-aside width="208px">
         <layout-nav />
       </el-aside>
-      <el-main class="main-block">Main</el-main>
+      <el-main class="main-block">
+        <router-view></router-view>
+      </el-main>
     </el-container>
   </el-container>
 </template>
